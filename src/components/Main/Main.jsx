@@ -1,10 +1,15 @@
-import React from 'react'
-import { Card } from '../Card/Card'
+import style from "./Main.module.css";
 
-export const Main = ({value,data}) => {
+import { Card } from "../Card/Card.module";
+
+
+//компонент отоброжения карточек в майне
+export const Main = ({ value, filterData }) => {
   return (
     <main>
-      {data.map(elem => <Card/>)}
+      {filterData.map((elem) => (
+        <Card key={elem.title} {...elem} />
+      ))}
     </main>
-  )
-}
+  );
+};

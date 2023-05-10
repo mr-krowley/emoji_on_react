@@ -1,0 +1,29 @@
+header {
+  background-image: url(../Header/bk/Rectangle\ 22х.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 295px;
+  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 87px;
+  color: #cff4fc;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+header > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  color: #cff4fc;
+  text-align: center;
+  margin-bottom: 68px;
+}

@@ -1,10 +1,9 @@
 
 import { useEffect, useState } from 'react';
-import './App.css';
 
-import { Card } from './components/Card/Card';
 import { Search } from './components/Search/Search';
 import { Main } from './components/Main/Main';
+import { Header } from './components/Header/Header';
 
 function App() {
 
@@ -24,20 +23,21 @@ function App() {
   const searchCard = (evt) => {
     setValue(evt.target.value);
   }
-
+  // отфильтрованные карточки по поиску записываем в новвую переменную
+  const filterData = data.filter((elem) => elem.title.includes(value));
 
 console.log(data);
 console.log(value);
-
+console.log(filterData);
 
 
 
 
   return (
     <>
-      <Search value={value} inputHandler={searchCard}/>
-      <Main data={data} value={value} />
-      
+      <Header />
+      <Search value={value} inputHandler={searchCard} />
+      <Main filterData={filterData} />
     </>
   );
 }
