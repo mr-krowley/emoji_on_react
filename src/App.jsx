@@ -35,9 +35,15 @@ function App() {
   };
   const newValue = value.trim().toLowerCase();
   
-
-
+  // состояние количество на странице
+  const [perPage, setPerPage] = useState(12);
   
+
+
+
+
+
+
   // отфильтрованные карточки по поиску записываем в новвую переменную
   const filterData = data.filter(
     (elem) =>
@@ -47,13 +53,13 @@ function App() {
   
  
   
-
+    console.log(perPage);
 
   return (
     <>
       <Header value={value} inputHandler={searchCard} />
       <Main filterData={filterData} />
-      <Footer/>
+      <Footer setPerPage={setPerPage} />
     </>
   );
 }
