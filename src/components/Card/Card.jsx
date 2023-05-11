@@ -1,4 +1,4 @@
-import "./Card.module";
+import s from './Card.module.css'
 
 //компонент рисующий самму карточку
 export function Card({ symbol, title, keywords }) {

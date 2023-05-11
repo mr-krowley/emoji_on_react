@@ -1,15 +1,16 @@
 import style from "./Main.module.css";
 
-import { Card } from "../Card/Card.module";
-
+import { Card } from "../Card/Card";
 
 //компонент отоброжения карточек в майне
-export const Main = ({ value, filterData }) => {
+export const Main = ({ filterData }) => {
   return (
     <main>
-      {filterData.map((elem) => (
-        <Card key={elem.title} {...elem} />
-      ))}
+      <div className={style.container}>
+          {filterData.map((elem) => (
+            <Card key={elem.title} {...elem} />
+          ))}
+      </div>
     </main>
   );
 };

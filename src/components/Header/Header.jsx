@@ -1,10 +1,13 @@
 import style from './Header.module.css';
+import { Search } from '../Search/Search';
 
-export const Header = () => {
+
+export const Header = ({value, inputHandler  }) => {
   return (
     <header className={style.Header}>
       <h1 className={style.h1}>Emoji Finder</h1>
-      <p className={style.p}>Find emoji by keywords</p>
+      <p className={style.copyright}>Find emoji by keywords</p>
+      <Search value={value} inputHandler={inputHandler} />
     </header>
   );
 }
