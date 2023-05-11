@@ -41,11 +41,11 @@ function App() {
   console.log(data);
   console.log(value);
   console.log(filterData);
+ 
   
   return (
     <>
       <Header value={value} inputHandler={searchCard} />
-      {/* <Search value={value} inputHandler={searchCard} /> */}
       <Main filterData={filterData} />
       <Footer/>
     </>

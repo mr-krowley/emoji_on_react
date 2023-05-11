@@ -1,2 +1,36 @@
 
+.emoji_card {
+  height: 184px;
+  width: 316px;
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  padding: 24px;
+}
 
+.emoji {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 18px;
+}
+
+.emoji_name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 28px;
+  text-decoration: underline;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.emoji_keyworsds {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #3f444a;
+}
