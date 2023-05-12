@@ -1,3 +1,10 @@
-.active{
-  background-color: brown;
+button{
+  width: 39px;
+  height: 40px;
+}
+.active {
+  background-color: #055160;
+  border: 1px solid #dee2e6;
+  width: 39px;
+  height: 40px;
 }

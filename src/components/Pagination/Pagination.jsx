@@ -16,6 +16,7 @@ export const Pagination = ({
 
   return (
     <div>
+      <button onClick={() => setCurrentPage(currenPage - 1)}>&lt;&lt;</button>
       {arrPages.slice(firstButtonIndex, lastButtonIndex).map((elem, index) => (
         <button
           className={currenPage == elem ? s.active : null}
@@ -25,7 +26,7 @@ export const Pagination = ({
           {elem}
         </button>
       ))}
-      <button onClick={()=> setCurrentPage(currenPage + 1)}>&gt;&gt;</button>
+      <button onClick={() => setCurrentPage(currenPage + 1)}>&gt;&gt;</button>
     </div>
   );
 };

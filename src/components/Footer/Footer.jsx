@@ -13,7 +13,7 @@ export const Footer = ({
 }) => {
   return (
     <footer className={style.Footer}>
-      <p className={style.copyright}>2022 © Made with love by me</p>
+      {/* <p className={style.copyright}>2022 © Made with love by me</p> */}
       <Pagination
         pages={pages}
         setCurrentPage={setCurrentPage}
@@ -21,6 +21,7 @@ export const Footer = ({
         lastButtonIndex={lastButtonIndex}
         currenPage={currenPage}
       />
+      
       <PerPage setPerPage={setPerPage} setCurrentPage={setCurrentPage} />
     </footer>
   );

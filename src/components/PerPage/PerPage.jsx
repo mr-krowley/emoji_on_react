@@ -1,4 +1,5 @@
 import React from 'react'
+import s from './PerPage.module.css'
 
 export const PerPage = ({ setPerPage ,setCurrentPage}) => {
   return (

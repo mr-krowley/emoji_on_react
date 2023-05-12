@@ -44,6 +44,7 @@ function App() {
   //состояние текущей страницы
   const [currenPage, setCurrentPage] = useState(1);
 
+
   //вычисляем количество страниц
   let pages = Math.ceil(filterData.length / perPage);
   //находим индекс последней карточки на странице
@@ -51,10 +52,10 @@ function App() {
   //находим индекс первой карточки на странице
   let firstIndex = lastIndex - perPage;
 
+  
     // логика для  отображени пагинации 
-  let firstButtonIndex
-  let lastButtonIndex
-
+  let firstButtonIndex;
+  let lastButtonIndex;
     switch (true) {
       case (currenPage <= 3): {
         firstButtonIndex = 0;
@@ -68,15 +69,14 @@ function App() {
       default: {
         firstButtonIndex = currenPage - 3;
         lastButtonIndex = currenPage + 2 ;
-        }
-      
-       
+        }  
     }
 
 
 
 
 
+  
   return (
     <>
       <Header value={value} inputHandler={searchCard} />
