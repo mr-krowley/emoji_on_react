@@ -51,8 +51,20 @@ function App() {
   //находим индекс первой карточки на странице
   let firstIndex = lastIndex - perPage;
 
+    // логика для  отображени пагинации 
+  let firstButtonIndex
+  let lastButtonIndex
 
-
+    switch (true) {
+      case (currenPage <= 3): {
+        firstButtonIndex = 0;
+        lastButtonIndex = 5
+        break;
+      }
+      
+      
+       
+    }
 
 
 
@@ -70,6 +82,9 @@ function App() {
         setPerPage={setPerPage}
         pages={pages}
         setCurrentPage={setCurrentPage}
+        firstButtonIndex={firstButtonIndex}
+        lastButtonIndex={lastButtonIndex}
+        currenPage={currenPage}
       />
     </>
   );
