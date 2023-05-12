@@ -25,6 +25,7 @@ export const Pagination = ({
           {elem}
         </button>
       ))}
+      <button onClick={()=> setCurrentPage(currenPage + 1)}>&gt;&gt;</button>
     </div>
   );
 };

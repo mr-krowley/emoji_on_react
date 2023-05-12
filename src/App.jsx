@@ -61,7 +61,14 @@ function App() {
         lastButtonIndex = 5
         break;
       }
-      
+      case (currenPage >= pages - 3): {
+        firstButtonIndex = pages - 5;
+        lastButtonIndex = pages;
+      }
+      default: {
+        firstButtonIndex = currenPage - 3;
+        lastButtonIndex = currenPage + 2 ;
+        }
       
        
     }
